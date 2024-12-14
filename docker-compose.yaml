@@ -2,7 +2,7 @@ version: "3.9"
 services:
   main:
     image: b3log/siyuan
-    command: ['--workspace=/siyuan/workspace/']
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${AUTH_CODE}']
     ports:
       - 6806:6806
     volumes:
